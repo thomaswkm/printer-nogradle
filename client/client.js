@@ -21,7 +21,7 @@ const fs = require("fs");
     console.log("Conectado al servidor ZeroC Ice ✅");
 
     // Leer imagen local (por ejemplo, 'input.jpg')
-    const inputPath = "./input.jpg";
+    const inputPath = "./images/input.jpg";
     if (!fs.existsSync(inputPath)) {
       console.error("❌ No se encontró input.jpg en el directorio actual");
       return;

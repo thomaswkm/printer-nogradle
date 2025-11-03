@@ -27,5 +27,5 @@ venv/
 Thumbs.db
 
 # === Images (opcional si son solo de prueba) ===
-input.jpg
+#input.jpg
 output_bw.jpg
