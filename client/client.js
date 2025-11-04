@@ -10,7 +10,9 @@ const fs = require("fs");
     communicator = Ice.initialize();
 
     // Crear proxy al objeto remoto
-    const base = communicator.stringToProxy("ColorService:default -p 10000");
+    const base = communicator.stringToProxy(
+      "ColorService:tcp -h 10.147.18.5 -p 10000"
+    );
     const service = await ImageApp.ColorServicePrx.checkedCast(base);
 
     if (!service) {
